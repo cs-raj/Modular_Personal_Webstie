@@ -1,0 +1,39 @@
+*{
+   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+/* Reuable Code */
+/* This is the section for code resusing */
+
+header, .projects, .internship{
+    background: linear-gradient(white,lightskyblue);
+}
+
+#about, .academic , footer{
+    background: linear-gradient(lightskyblue,white);
+}
+
+.header-options, .header-menu, #about,.projects-card, .project-card-skills, .internship, .internship-cards, .internship-card-skills , .academic-cards, .skills , .contacts  {
+    display: flex;
+}
+
+.header-menu, .projects-card, .project-card-skills , .internship-cards, .internship-card-skills, .academic-cards , .skills , .contacts  {
+    justify-content: space-around;
+}
+
+@media screen and (max-width:1050px) {
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        width: 480px;
+    }
+}

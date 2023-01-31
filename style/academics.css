@@ -1,0 +1,69 @@
+/* Academics */
+.academic {
+    height: auto;
+}
+
+#academic-intro {
+    text-align: center;
+    border-bottom: 5px solid orange;
+    width: 100px;
+    margin: 5px auto;
+    color: purple;
+}
+
+.academic-cards {
+    width: auto;
+    margin: 10px;
+}
+
+.academic-card {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    border: 1px solid purple;
+    border-radius: 2%;
+}
+
+.academic-card-year {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid orange;
+    color: purple;
+}
+
+.academic-card-school {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid purple;
+    color: orange;
+}
+
+.academic-card-course {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid purple;
+    color: purple;
+}
+
+.academic-card:hover{
+    font-size: 1.7rem;
+    text-align: center;
+    width: 480px;
+    height: auto;
+    border: 1px solid purple;
+    border-radius: 2%;
+}
+/* Responsiveness in academic section */
+@media screen and (max-width:1050px) {
+    .academic-cards {
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .academic-card {
+        margin: 20px;
+        width: 300px;
+    }
+}

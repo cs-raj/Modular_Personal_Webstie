@@ -1,0 +1,35 @@
+/* Skill Section */
+
+.skills {
+    height: auto;
+    margin-top: 20px;
+    background-color: lightblue;
+}
+
+.skill {
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 10%;
+    width: auto;
+    font-weight: bold;
+}
+
+/* Responsiveness in Skill Section */
+@media screen and (max-width:1050px) {
+    .skills {
+        flex-direction: column;
+        margin: 5px;
+        align-items: center;
+    }
+
+    .skill {
+        width: 120px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+    }
+}

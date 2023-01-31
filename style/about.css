@@ -1,0 +1,68 @@
+.about-intro {
+    text-align: center;
+    border-bottom: 5px solid orange;
+    width: 100px;
+    margin: 5px auto;
+    color: purple;
+}
+
+/* About Section */
+
+#about {
+    margin: 20px 50px;
+}
+
+#about-img {
+    height: 400px;
+    width: auto;
+    border-radius: 10%;
+    border-bottom: 10px solid purple;
+}
+
+.about-text {
+    border-radius: 5%;
+    margin: 20px;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: justify;
+}
+
+#about-name {
+    color: purple;
+    font-weight: bold;
+}
+
+.about-tech {
+    display: inline;
+    color: orange;
+}
+
+.about-tech-cs {
+    display: inline;
+    color: orange;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 0 purple;
+}
+
+#about {
+    padding: 20px;
+    border: 1px solid purple;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsiveness in about section */
+
+@media screen and (max-width:1050px) {
+    #about {
+        flex-direction: column;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* About Section Ends */

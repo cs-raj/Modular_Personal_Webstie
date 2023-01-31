@@ -1,0 +1,132 @@
+/* Internship */
+.internship {
+    height: auto;
+    flex-direction: column;
+}
+
+#internship-intro {
+    text-align: center;
+    border-bottom: 5px solid orange;
+    width: 100px;
+    margin: 5px auto;
+    color: purple;
+}
+
+.internship-cards {
+    width: auto;
+    margin: 10px;
+}
+
+.internship-card {
+    border: 1px solid purple;
+    border-radius: 2%;
+    margin: 10px;
+    width: 400px;
+}
+
+.internship-card-company {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    color: orange;
+}
+
+.internship-card-title {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    color: purple;
+}
+
+.internship-card-skills {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    color: orange;
+}
+
+.internship-card-duration {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    color: purple;
+}
+
+.internship-card-description {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    color: purple;
+    text-align: justify;
+}
+
+.internship-card-skill {
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid brown;
+    color: purple;
+    font-size: 1.2rem;
+}
+
+
+.internship-card:hover{
+    width: 480px;
+}
+/* Responsiveness for internship part */
+@media screen and (max-width:1050px) {
+    .internship {
+        width: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .internship-cards {
+        flex-direction: column;
+        height: auto;
+        width: 480px;
+        margin: 0;
+    }
+
+    .internship-card-description {
+        display: none;
+    }
+
+    .internship-card {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .internship-card-company {
+        font-size: 1rem;
+        margin: 0;
+        /* width: 200px; */
+    }
+
+    .internship-card-title {
+        font-size: 1rem;
+        margin: 0;
+
+        /* width: 200px; */
+    }
+
+    .internship-card-duration {
+        font-size: 1rem;
+        margin: 0;
+
+        /* width: 200px; */
+    }
+
+    .internship-card-skills {
+        flex-direction: column;
+        font-size: 0.9rem;
+        margin: 0;
+
+        /* width: 200px; */
+    }
+}

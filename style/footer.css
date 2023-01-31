@@ -1,0 +1,49 @@
+/* Footer Section of the Wwb Page */
+footer {
+    margin-top: 20px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.footer-text {
+    margin: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.contact-type{
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+.contact-type-icon{
+    margin: 10px;
+}
+.contact-type-detail{
+    margin: 10px;
+}
+
+.material-symbols-outlined{
+    margin: 10px;
+}
+/* Responsiveness in footer */
+@media screen and (max-width:1050px) {
+    body{
+        width: auto;
+        margin: 0;
+    }
+    footer {
+        width: 480px;
+        margin: 2px auto;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .contacts{
+        flex-direction: column;
+        align-items: center;
+    }
+}

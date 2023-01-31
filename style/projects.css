@@ -1,0 +1,80 @@
+.projects {
+    height: auto;
+}
+
+#project-intro {
+    text-align: center;
+    border-bottom: 5px solid orange;
+    width: 100px;
+    margin: 5px auto;
+    color: purple;
+}
+
+.projects-card {
+    margin: 10px;
+    margin-left: auto;
+}
+
+.project-card {
+    margin: 10px;
+    border: 2px solid purple;
+    border-radius: 2%;
+    width: 500px;
+}
+
+.project-card-title {
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    color: purple;
+}
+
+.project-card-skills {
+    border: 1px solid red;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.project-card-description {
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+    font-size: 1.3rem;
+    color: brown;
+}
+
+.project-card-skills-card {
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid brown;
+    color: purple;
+    background-color: orange;
+    font-size: 1.2rem;
+}
+
+/* Responsiveness for Project Section */
+@media screen and (max-width:1050px) {
+    .projects-card{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projects-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 300px;
+    }
+
+    .project-card-description {
+        display: none;
+    }
+
+    .project-card-skills {
+        flex-direction: column;
+    }
+}
