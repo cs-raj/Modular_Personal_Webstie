@@ -1,6 +1,6 @@
 import { Project } from "./data.js";
 import Menu from "./menu.js";
-class ProjectComponent{
+export default class ProjectComponent{
     constructor(){
         this.menu = new Menu();
         var head = document.getElementsByTagName('HEAD')[0];
@@ -51,8 +51,10 @@ class ProjectComponent{
             projectDiv.appendChild(projectsDiv);
 
         }
-        document.body.appendChild(projectDiv);
+        return projectDiv;
+        // document.body.appendChild(projectDiv);
     }
 }
+
 const pc = new ProjectComponent();
 pc.render();

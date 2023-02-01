@@ -2,8 +2,8 @@ class Mount{
     constructor(){}
 
     //Arguements : parent elment, elementToBeMountedName, elementToBeMounted
-    mount(parent,elementName,element){
-        if(parent.querySelector('.'+elementName)===null){
+    mount(parent,element){
+        if(parent){
             parent.appendChild(element);
             return;
         }

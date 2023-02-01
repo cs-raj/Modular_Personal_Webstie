@@ -46,9 +46,10 @@ class HeaderComponent{
         headerOptions.appendChild(Image);
         headerOptions.appendChild(headerMenu);
         header.appendChild(headerOptions);
-        console.log(header);
-        document.body.appendChild(header);
-        console.log(headerMenu);
+        return header;
+        // console.log(header);
+        // document.body.appendChild(header);
+        // console.log(headerMenu);
 
     }
     mount(){}

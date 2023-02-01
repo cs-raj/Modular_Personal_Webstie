@@ -122,18 +122,36 @@ export const Academics = {
 export const footer = {
     "contacts":[
         {
+            "grandParent":"contact-type",
+            "parent":"contact-type-icon",
+            "spanClass":"material-symbols-rounded",
+            "typeClass":"contact-type-detail",
             "contactType":"mail",
             "contactValue":"abc@gmail.com"
         },
         {
+            "grandParent":"contact-type",
+            "parent":"contact-type-icon",
+            "spanClass":"material-symbols-rounded",
+            "typeClass":"contact-type-detail",
             "contactType":"call",
             "contactValue":"1234567890"
         },
         {
+            "grandParent":"contact-type",
+            "parent":"contact-type-icon",
+            "spanClass":["fa","fa-linkedin-square"],
+            "style":"font-size:36px",
+            "typeClass":"contact-type-detail",
             "contactType":"fa fa-linkedin-square",
             "contactValue":"abc@gmail.com"
         },
         {
+            "grandParent":"contact-type",
+            "parent":"contact-type-icon",
+            "spanClass":["fa","fa-github"],
+            "style":"font-size:36px",
+            "typeClass":"contact-type-detail",
             "contactType":"fa fa-github",
             "contactValue":"abc@gmail.com"
         }

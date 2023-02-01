@@ -42,5 +42,60 @@ class Menu{
             parentComponent.appendChild(acadmeicCard);
         }
     }
+
+    MenuFunction3(parentElement,dataObject){
+
+        for(let i = 0;i<dataObject.length;i++){
+            console.log(dataObject[i]);
+            const contactType = document.createElement('div');
+            const contactTypeIcon = document.createElement('div');
+            const contactTypeDetail = document.createElement('div');
+            const iconSpan = document.createElement('span');
+            contactType.classList.add(dataObject[i].grandParent);
+            contactTypeIcon.classList.add(dataObject[i].parent);
+            console.log(dataObject[i].spanClass);
+            iconSpan.classList.add(dataObject[i].spanClass);
+            contactTypeDetail.classList.add(dataObject[i].typeClass);
+
+            iconSpan.innerText = dataObject[i].contactType;
+            contactTypeDetail.innerText = dataObject[i].contactValue;
+
+            parentElement.appendChild(contactType);
+            contactType.appendChild(contactTypeIcon);
+            contactTypeIcon.appendChild(iconSpan);
+            contactType.appendChild(contactTypeDetail);
+        }
+    }
+
+    MenuFunction4(parentElement,dataObject){
+        for(let i = 0;i<dataObject.length;i++){
+            console.log(dataObject[i]);
+            const contactType = document.createElement('div');
+            const contactTypeIcon = document.createElement('div');
+            const contactTypeDetail = document.createElement('div');
+            const iconSpan = document.createElement('i');
+            contactType.classList.add(dataObject[i].grandParent);
+            contactTypeIcon.classList.add(dataObject[i].parent);
+
+
+            console.log(dataObject[i].spanClass);
+            
+            for(let j = 0;j<dataObject[i].spanClass.length;j++){
+                iconSpan.classList.add(dataObject[i].spanClass[j]);
+            }
+            iconSpan.style = dataObject[i].style;
+
+            
+            contactTypeDetail.classList.add(dataObject[i].typeClass);
+
+            // iconSpan.innerText = dataObject[i].contactType;
+            contactTypeDetail.innerText = dataObject[i].contactValue;
+
+            parentElement.appendChild(contactType);
+            contactType.appendChild(contactTypeIcon);
+            contactTypeIcon.appendChild(iconSpan);
+            contactType.appendChild(contactTypeDetail);
+        }
+    }
 }
 export default Menu

@@ -34,8 +34,9 @@ class AboutComponent{
         aboutDiv.appendChild(about);
         about.appendChild(aboutImage);
         about.appendChild(aboutText);
-        console.log(aboutDiv);
-        document.body.appendChild(aboutDiv);
+        return about;
+        // console.log(aboutDiv);
+        // document.body.appendChild(aboutDiv);
 
     }
     mount(){}

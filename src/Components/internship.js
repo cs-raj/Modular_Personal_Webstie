@@ -1,6 +1,6 @@
 import { Internship } from "./data.js";
 import Menu from "./menu.js";
-class InternshipComponent{
+export default class InternshipComponent{
     constructor(){
         this.menu = new Menu();
         var head = document.getElementsByTagName('HEAD')[0];
@@ -34,13 +34,6 @@ class InternshipComponent{
             internshipCard.appendChild(internshipskills);
             this.menu.MenuFunction(internshipCard,'internship-card-description',[Internship.internship[i].description]);
             htmlObject.push(internshipCard);
-            // this.menu.MenuFunction(projectCard,'project-card-title',[Project.projects[i].title]);
-            // const projectSkills = document.createElement('div'); 
-            // projectSkills.classList.add("project-card-skills");
-            // this.menu.MenuFunction(projectSkills,Project.class[4],Project.projects[i].skills);
-            // projectCard.appendChild(projectSkills);
-            // this.menu.MenuFunction(projectCard,'project-card-description',[Project.projects[i].description]);
-            // htmlObject.push(projectCard);
         }
         console.log(htmlObject);
         for(let i = 0;i<htmlObject.length;i=i+2){
@@ -54,8 +47,10 @@ class InternshipComponent{
             internshipDiv.appendChild(internshipCards);
 
         }
-        document.body.appendChild(internshipDiv);
+        return internshipDiv;
+        // document.body.appendChild(internshipDiv);
     }
 }
+
 const ic = new InternshipComponent();
 ic.render();
