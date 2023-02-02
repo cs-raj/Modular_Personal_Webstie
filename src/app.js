@@ -15,9 +15,12 @@ class PersonalWebsite{
         console.log(this.childElementOrder)
     }
     render(){
+        // const root = document.createElement('div');
+        // root.id = 'root';
         for(let i =0;i<this.childElementOrder.length;i++){
-            document.body.appendChild(this.childElementOrder[i]);
+            document.getElementById('root').appendChild(this.childElementOrder[i]);
         }
+        // document.body.appendChild(root);
     }
 }
 
