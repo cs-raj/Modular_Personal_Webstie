@@ -1,5 +1,4 @@
 //This file will contain the data from the website in the from of individual objects
-//
 export const Header = {
     "logo": "./assets/raj-logo.png",
     "navBar":[

@@ -1,5 +1,5 @@
 import { Internship } from "./data.js";
-import Menu from "./menu.js";
+import Menu from "./Menu.js";
 export default class InternshipComponent{
     constructor(){
         this.menu = new Menu();
@@ -35,7 +35,6 @@ export default class InternshipComponent{
             this.menu.MenuFunction(internshipCard,'internship-card-description',[Internship.internship[i].description]);
             htmlObject.push(internshipCard);
         }
-        console.log(htmlObject);
         for(let i = 0;i<htmlObject.length;i=i+2){
             const internshipCards = document.createElement('div');
             internshipCards.classList.add('internship-cards');
@@ -45,12 +44,7 @@ export default class InternshipComponent{
                 internshipCards.appendChild(sliceArray[j]);
             }
             internshipDiv.appendChild(internshipCards);
-
         }
         return internshipDiv;
-        // document.body.appendChild(internshipDiv);
     }
 }
-
-const ic = new InternshipComponent();
-ic.render();

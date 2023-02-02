@@ -15,13 +15,11 @@ class Menu{
             childDiv.classList.add(childClass);
             childDiv.innerText = childData[i];
             parentComponent.appendChild(childDiv);
-            console.log(parentComponent);
         }
         return parentComponent;
     }
 
     MenuFunction2(parentComponent,divArray,dataObject){
-        console.log(divArray)
         for(let i = 0;i<dataObject.length;i++){
             const acadmeicCard = document.createElement('div');
             const d1 = document.createElement('div');
@@ -53,7 +51,6 @@ class Menu{
             const iconSpan = document.createElement('span');
             contactType.classList.add(dataObject[i].grandParent);
             contactTypeIcon.classList.add(dataObject[i].parent);
-            console.log(dataObject[i].spanClass);
             iconSpan.classList.add(dataObject[i].spanClass);
             contactTypeDetail.classList.add(dataObject[i].typeClass);
 
@@ -75,20 +72,12 @@ class Menu{
             const contactTypeDetail = document.createElement('div');
             const iconSpan = document.createElement('i');
             contactType.classList.add(dataObject[i].grandParent);
-            contactTypeIcon.classList.add(dataObject[i].parent);
-
-
-            console.log(dataObject[i].spanClass);
-            
+            contactTypeIcon.classList.add(dataObject[i].parent);           
             for(let j = 0;j<dataObject[i].spanClass.length;j++){
                 iconSpan.classList.add(dataObject[i].spanClass[j]);
             }
             iconSpan.style = dataObject[i].style;
-
-            
             contactTypeDetail.classList.add(dataObject[i].typeClass);
-
-            // iconSpan.innerText = dataObject[i].contactType;
             contactTypeDetail.innerText = dataObject[i].contactValue;
 
             parentElement.appendChild(contactType);

@@ -1,5 +1,5 @@
 import { Header } from "./data.js";
-import Menu from "./menu.js";
+import Menu from "./Menu.js";
 
 class HeaderComponent{
     constructor(){
@@ -47,15 +47,6 @@ class HeaderComponent{
         headerOptions.appendChild(headerMenu);
         header.appendChild(headerOptions);
         return header;
-        // console.log(header);
-        // document.body.appendChild(header);
-        // console.log(headerMenu);
-
     }
-    mount(){}
 }
-
-const hc = new HeaderComponent();
-hc.render();
-
 export default HeaderComponent;

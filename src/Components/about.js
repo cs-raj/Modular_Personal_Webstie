@@ -1,5 +1,5 @@
 import { About } from "./data.js";
-import Menu from "./menu.js";
+import Menu from "./Menu.js";
 
 class AboutComponent{
     constructor(){
@@ -35,14 +35,7 @@ class AboutComponent{
         about.appendChild(aboutImage);
         about.appendChild(aboutText);
         return about;
-        // console.log(aboutDiv);
-        // document.body.appendChild(aboutDiv);
-
     }
     mount(){}
 }
-
-const hc = new AboutComponent();
-hc.render();
-
 export default AboutComponent;

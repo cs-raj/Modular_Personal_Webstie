@@ -1,5 +1,5 @@
 import { Skills } from "./data.js";
-import Menu from "./menu.js";
+import Menu from "./Menu.js";
 class SkillComponent{
     constructor(){
         this.menu = new Menu();
@@ -18,11 +18,9 @@ class SkillComponent{
         skillLink.id = "skills-link";
         skillDiv.appendChild(skillLink);
         this.menu.MenuFunction(skillDiv,"skill",Skills.skills);
-        // document.body.appendChild(skillDiv);
+
         return skillDiv;
     }
 
 }
 export default SkillComponent;
-const sc = new SkillComponent();
-sc.render();

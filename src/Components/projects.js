@@ -1,5 +1,5 @@
 import { Project } from "./data.js";
-import Menu from "./menu.js";
+import Menu from "./Menu.js";
 export default class ProjectComponent{
     constructor(){
         this.menu = new Menu();

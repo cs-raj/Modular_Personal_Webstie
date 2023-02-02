@@ -1,5 +1,5 @@
 import { footer } from "./data.js";
-import Menu from "./menu.js";
+import Menu from "./Menu.js";
 export default class FooterComponent{
     constructor(){
         this.menu = new Menu();
@@ -13,7 +13,6 @@ export default class FooterComponent{
         link2.rel = 'stylesheet';
         link2.href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200";
         head.appendChild(link2);
-
         var link3 = document.createElement('link');
         link3.rel = 'stylesheet';
         link3.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
@@ -23,24 +22,16 @@ export default class FooterComponent{
         const footerDiv = document.createElement('footer');
         const contacts = document.createElement('div');
         const footerText = document.createElement('div');
-
         const footerText2 = document.createElement('div');
         footerText.classList.add('footer-text');
         footerText2.classList.add('footer-text');
         contacts.classList.add("contacts");
         footerText2.innerHTML = "&copy Copyright Raj Pandey";
-        console.log(footer.contacts.slice(0,2))
         this.menu.MenuFunction3(contacts,footer.contacts.slice(0,2));
         this.menu.MenuFunction4(contacts,footer.contacts.slice(2,4));
         footerDiv.appendChild(footerText);
         footerText.appendChild(contacts);
         footerDiv.appendChild(footerText2);
         return footerDiv;
-        document.body.appendChild(footerDiv);
-        
-        console.log(contacts);
     }
 }
-
-const fc = new FooterComponent();
-fc.render();

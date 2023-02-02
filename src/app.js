@@ -1,7 +1,7 @@
-import Mount from "./Components/mount.js";
-import MainComponent from "./Components/main.js";
-import HeaderComponent from "./Components/header.js";
-import FooterComponent from "./Components/footer.js";
+import Mount from "./Components/Mount.js";
+import MainComponent from "./Components/Main.js";
+import HeaderComponent from "./Components/Header.js";
+import FooterComponent from "./Components/Footer.js";
 class PersonalWebsite{
     constructor(){
         this.mount = new Mount();
@@ -16,13 +16,10 @@ class PersonalWebsite{
     }
     render(){
         for(let i =0;i<this.childElementOrder.length;i++){
-            // console.log(body);
             document.body.appendChild(this.childElementOrder[i]);
         }
     }
 }
 
-// const mount = new Mount();
 const pw = new PersonalWebsite();
 pw.render();
-// mount(document.getElementById('root'));
